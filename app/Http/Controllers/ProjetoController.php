@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ModuloArquivo;
+use App\Models\Perfil;
 use App\Models\Projeto;
 use Illuminate\Http\Request;
 

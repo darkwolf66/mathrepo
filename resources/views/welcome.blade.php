@@ -82,11 +82,11 @@
                         <div class="course-block course-list-item">
                             <div class="row align-items-center">
                                 <div class="col-lg-4 col-sm-4 ">
-                                    <img src="{{config('app.url')}}/{{$colaborador->perfil->profile_picture}}" alt="" class="img-fluid">
+                                    <img src="{{config('app.url')}}/{{$colaborador->profile_picture}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="col-lg-8  col-sm-8">
                                     <div class="course-content">
-                                        <h4><a href="{{config('app.url')}}/perfil/{{$colaborador->perfil->slug}}">{{$colaborador->perfil->nome}}</a></h4>
+                                        <h4><a href="{{config('app.url')}}/perfil/{{$colaborador->slug}}">{{$colaborador->nome}}</a></h4>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PerfilController;
+use App\Models\Perfil;
 use App\Models\Projeto;
 use App\Models\ProjetoColaborador;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,7 @@ use App\Http\Controllers\ProjetoController;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['projetos'=> Projeto::all(), 'colaboradores'=> ProjetoColaborador::with('perfil')->get()]);
+    return view('welcome', ['projetos'=> Projeto::all(), 'colaboradores'=> Perfil::get()]);
 });
 
 Auth::routes();
