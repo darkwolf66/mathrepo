@@ -132,7 +132,7 @@
                                 <li>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span><i class="far fa-file-alt"></i>Arquivos :</span>
-                                        2
+                                        {{$projeto->numeroDeArquivos}}
                                     </div>
                                 </li>
                                 <li>
