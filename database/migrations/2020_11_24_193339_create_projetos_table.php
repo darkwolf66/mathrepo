@@ -23,6 +23,10 @@ class CreateProjetosTable extends Migration
 
             $table->integer('visualizacoes');
             $table->string('slug')->unique();
+
+            $table->date('data_inicio')->nullable(true);
+            $table->date('data_termino')->nullable(true);
+
             $table->timestamps();
         });
     }

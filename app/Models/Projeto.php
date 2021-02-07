@@ -13,4 +13,10 @@ class Projeto extends Model
     public function categoria() {
         return $this->hasOne('App\Models\ProjetoCategorias', 'projeto_id');
     }
+    public function colaboradores(){
+        return $this->hasMany('App\Models\ProjetoColaborador');
+    }
+    public function modulos(){
+        return $this->hasMany('App\Models\ProjetoModulos');
+    }
 }

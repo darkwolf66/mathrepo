@@ -31,13 +31,19 @@
 </head>
 <body id="top-header">
     <header>
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6 text-center mt-4">
+                <a class="navbar-brand" href="{{url('/')}}">
+                    <img src="{{asset('/images/logo.png')}}" alt="MathRepo" class="img-fluid">
+                </a>
+            </div>
+        </div>
         <!-- Main Menu Start -->
         <div class="site-navigation main_menu menu-style-2" id="mainmenu-area">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="{{url('/')}}">
-                        <img src="{{asset('/images/logo.png')}}" alt="MathRepo" class="img-fluid">
-                    </a>
+
+
 
                     <!-- Toggler -->
 
@@ -45,27 +51,13 @@
                         <span class="fa fa-bars"></span>
                     </button>
 
-                    <!-- Collapse -->
+                    <!-- Collapse
                     <div class="collapse navbar-collapse" id="navbarMenu">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item ">
                                 <a href="{{url('/')}}" class="nav-link js-scroll-trigger">
                                     Inicio
                                 </a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Projetos<i class="fa fa-angle-down"></i>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbar3">
-                                    <a class="dropdown-item " href="course-grid.html">
-                                        Projeto 1
-                                    </a>
-                                    <a class="dropdown-item " href="course-grid-2.html">
-                                        Projeto 2
-                                    </a>
-                                </div>
                             </li>
                             <li class="nav-item ">
                                 <a href="contact.html" class="nav-link">
@@ -80,7 +72,7 @@
                         </ul>
 
                         <div class="header-login">
-                            @if (Route::has('login'))
+                            {--@if (Route::has('login'))
                                 @auth
                                     <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                                 @else
@@ -89,9 +81,9 @@
                                         <a href="{{ route('register') }}" class="btn btn-main btn-sm">Registrar</a>
                                     @endif
                                 @endif
-                            @endif
+                            @endif--}
                         </div>
-                    </div> <!-- / .navbar-collapse -->
+                    </div>  --><!-- / .navbar-collapse -->
                 </div> <!-- / .container -->
             </nav>
         </div>

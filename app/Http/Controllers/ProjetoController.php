@@ -22,8 +22,7 @@ class ProjetoController extends Controller
         if(Projeto::where('slug', $slug)->count() <= 0){
             return abort(404);
         }
-        $project = Projeto::with('categoria')->first();
-
+        $project = Projeto::with(['categoria', 'colaboradores', 'colaboradores.perfil', 'modulos.arquivos'])->first();
         return view('projeto', ['projeto' => $project]);
     }
 }

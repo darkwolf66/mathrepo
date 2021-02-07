@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProjetoCategoriasTable extends Migration
+class CreateProjetoModulosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateProjetoCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('projeto_categorias', function (Blueprint $table) {
+        Schema::create('projeto_modulos', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-
             $table->unsignedBigInteger('projeto_id');
             $table->foreign('projeto_id')->references('id')->on('projetos');
+
+            $table->string('titulo');
+            $table->longText('descricao');
 
             $table->timestamps();
         });
@@ -31,6 +32,6 @@ class CreateProjetoCategoriasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('projeto_categorias');
+        Schema::dropIfExists('projeto_modulos');
     }
 }

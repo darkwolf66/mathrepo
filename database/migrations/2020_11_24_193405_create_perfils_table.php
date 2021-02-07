@@ -17,17 +17,14 @@ class CreatePerfilsTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('profile_picture');
-            $table->string('titulo');
-            $table->string('instituicao_de_vinculo');
-            $table->string('facebook');
-            $table->string('twitter');
-            $table->string('instagram');
-            $table->string('linkedin');
-            $table->string('lattes');
             $table->longText('sobre');
-
-            $table->date('inicio_projeto')->nullable(true);
-            $table->date('final_projeto')->nullable(true);
+            $table->string('instituicao_de_vinculo')->nullable(true);
+            $table->string('facebook')->nullable(true);
+            $table->string('twitter')->nullable(true);
+            $table->string('instagram')->nullable(true);
+            $table->string('linkedin')->nullable(true);
+            $table->string('lattes')->nullable(true);
+            $table->string('slug');
 
             $table->timestamps();
         });
