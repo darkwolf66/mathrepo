@@ -181,8 +181,4 @@
             </div>
         </div>
     </section>
-    http://url.com
-    slug
-    descricao
-
 @endsection

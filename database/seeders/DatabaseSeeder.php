@@ -30,6 +30,22 @@ class DatabaseSeeder extends Seeder
             'lattes' => 'http://lattes.cnpq.br/0264896077247150',
             'slug' => 'aline-silva-de-bona'
         ]);
+        DB::table('perfils')->insert([
+            'nome' => "William Moraes",
+            'profile_picture' => 'uploads/william.jpg',
+            'sobre' => '',
+            'instituicao_de_vinculo' => 'Instituto Federal do Rio Grande do Sul Campus Canoas',
+            'lattes' => 'http://lattes.cnpq.br/',
+            'slug' => 'william-moraes'
+        ]);
+        DB::table('perfils')->insert([
+            'nome' => "Bruno Ferreira da Luz",
+            'profile_picture' => 'uploads/bruno.jpg',
+            'sobre' => '',
+            'instituicao_de_vinculo' => 'Instituto Federal do Rio Grande do Sul Campus Osório',
+            'lattes' => 'http://lattes.cnpq.br/',
+            'slug' => 'bruno-ferreira-da-luz'
+        ]);
         DB::table('projetos')->insert([
             'nome' => "Provas De Matemática Básica Alternativas E Investigativas",
             'image' => 'uploads/capa_1.jpeg',
